@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body class="bg-dark text-white">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/netflix_logo.png"
+            alt="Netflix Logo"
+            class="img-fluid"
+            style="max-height: 40px"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <!-- CONTENUTO CENTRALE -->
+    <div class="container py-5">
+      <!-- TITOLO CENTRATO -->
+      <div class="text-center mb-4">
+        <h1 class="display-5">Edit Profile</h1>
+        <hr class="border-secondary" />
+      </div>
+
+      <!-- BLOCCO: AVATAR + INPUT + DROPDOWN -->
+      <div class="d-flex justify-content-center">
+        <div
+          class="d-flex flex-column flex-md-row gap-4 align-items-center align-items-md-start w-100 px-3 justify-content-center"
+        >
+          <!-- AVATAR CON ICONA MATITA -->
+          <div class="position-relative mb-3 mb-md-0">
+            <img
+              src="assets/avatar.png"
+              class="rounded"
+              style="width: 100px"
+              alt="Avatar"
+            />
+            <i
+              class="bi bi-pencil-fill position-absolute bottom-0 start-0 translate-middle p-1 bg-dark text-white rounded-circle"
+              style="font-size: 0.8rem"
+            ></i>
+          </div>
+
+          <!-- CAMPI A DESTRA DELL’IMMAGINE -->
+          <div style="max-width: 400px; width: 100%">
+            <input
+              type="text"
+              class="form-control bg-secondary text-white border-0 mb-3"
+              value="Strive Student"
+            />
+
+            <label class="form-label">Language:</label>
+            <select
+              class="form-select bg-dark text-white border-secondary mb-4"
+            >
+              <option selected>English</option>
+              <option>Italian</option>
+              <option>French</option>
+              <option>Spanish</option>
+            </select>
+
+            <!-- MATURITY SETTINGS -->
+            <div class="mb-3">
+              <h6>Maturity Settings:</h6>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm mb-2 fw-bold"
+              >
+                ALL MATURITY RATINGS
+              </button>
+              <p class="text-white-50 mb-2" style="font-size: 0.9rem">
+                Show titles of <strong>all maturity ratings</strong> for this
+                profile.
+              </p>
+              <button type="button" class="btn btn-outline-secondary btn-sm">
+                EDIT
+              </button>
+            </div>
+
+            <hr class="border-secondary" />
+
+            <!-- AUTOPLAY CONTROLS -->
+            <div class="mb-4">
+              <h6>Autoplay controls</h6>
+              <div class="form-check">
+                <input
+                  class="form-check-input bg-dark border-secondary"
+                  type="checkbox"
+                  checked
+                  id="autoplay1"
+                />
+                <label class="form-check-label" for="autoplay1">
+                  Autoplay next episode in a series on all devices.
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input bg-dark border-secondary"
+                  type="checkbox"
+                  checked
+                  id="autoplay2"
+                />
+                <label class="form-check-label" for="autoplay2">
+                  Autoplay previews while browsing on all devices.
+                </label>
+              </div>
+            </div>
+
+            <hr class="border-secondary" />
+
+            <!-- BUTTONS -->
+            <div class="d-flex gap-3">
+              <button class="btn btn-light px-4 fw-bold">SAVE</button>
+              <button class="btn btn-outline-secondary px-4">CANCEL</button>
+              <button
+                class="btn btn-outline-secondary px-4 text-secondary"
+                disabled
+              >
+                DELETE PROFILE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
